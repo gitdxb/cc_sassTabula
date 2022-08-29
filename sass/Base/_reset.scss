@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    @include text($color-primary-0, $fs-1, $fw-1);
+    line-height: 1.8rem;
+}
+@media (min-width: 1200px){
+    .container{
+      max-width:1200px;
+      margin: auto;
+    }  
+  }

@@ -1,0 +1,22 @@
+@mixin text($color, $fs, $fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin bgImage($url){
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@mixin button {
+    box-shadow: 0 0 0 3em #b61984 inset;
+    display: inline-block;
+    line-height: 1;
+    width: auto;
+    font-size: $fs-3;
+    &:hover {
+        color: #b61984;
+    }
+}

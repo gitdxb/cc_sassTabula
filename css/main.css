@@ -1,1 +1,43 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #191919;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+.header {
+  width: 1260px;
+  margin: auto;
+}
+.header .header__content {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__right {
+  display: flex;
+}
+.header .header__right-icons {
+  display: flex;
+}
+.header .header__right-phone {
+  display: flex;
+}
+.header .header__right-phoneIcon .la-phone {
+  font-size: 1.25rem;
+  line-height: 1;
+  transform: rotateY(180deg);
+}/*# sourceMappingURL=main.css.map */

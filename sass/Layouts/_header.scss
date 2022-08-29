@@ -1,0 +1,26 @@
+.header {
+    width: 1260px;
+    margin: auto;
+    
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__right {
+        display: flex;
+    }
+    .header__right-icons {
+        display: flex;
+        
+    }
+    .header__right-phone {
+        display: flex;
+    }
+    .header__right-phoneIcon {
+        .la-phone{
+            font-size: $fs-4;
+            line-height: 1;
+            transform: rotateY(180deg);
+        }
+    }
+}
