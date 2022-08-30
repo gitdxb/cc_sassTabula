@@ -1,0 +1,30 @@
+.myCarousel {
+    margin-top: -136px;
+    padding: 0;
+    .myCarousel__left{
+        span{
+            @include text($color-primary-1, $fs-4 + 0.1, $fw-3);
+            margin-bottom: 0.5rem;
+        }
+        h1 {
+            @include text($color-primary-0, 3.8rem, $fw-4);
+        }
+    }
+    .myCarousel__right{
+        height: 580px;
+        background-image: url(../../img/hero_team.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+}
+.myCarousel__bottom {
+    margin-bottom: -40px;
+    margin-top: -202px;
+    height: 300px;
+    background-image: url(../../img/Violet_top_left_wave.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

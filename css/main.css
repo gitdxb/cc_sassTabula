@@ -23,6 +23,95 @@ div.container {
   padding: 0;
 }
 
+.myCarousel {
+  margin-top: -136px;
+  padding: 0;
+}
+.myCarousel .myCarousel__left span {
+  color: #b61984;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.myCarousel .myCarousel__left h1 {
+  color: #191919;
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.myCarousel .myCarousel__right {
+  height: 580px;
+  background-image: url(../../img/hero_team.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.myCarousel__bottom {
+  margin-bottom: -40px;
+  margin-top: -202px;
+  height: 300px;
+  background-image: url(../../img/Violet_top_left_wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.myContact {
+  background-color: #dcd1f0;
+  padding: 30px 0;
+}
+
+.myTeam .col {
+  padding: 0 1.35rem 1.35rem 1.35rem;
+}
+.myTeam .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 361px;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+}
+.myTeam .card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 20px 28px rgba(0, 0, 0, 0.11), 0 20px 28px rgba(146, 146, 145, 0.48);
+}
+.myTeam .card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11), 0 15px 24px rgba(146, 146, 145, 0.48);
+}
+.myTeam .card-title {
+  color: #b61984;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+.myTeam .card--name {
+  color: #191919;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+.myTeam .card-text {
+  color: #191919;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8em;
+  text-align: center;
+  margin: 0 0 1em;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.myTeam img {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.myTeam img:hover {
+  transform: scale(1.03);
+}
+
 .header__content {
   position: absolute;
   top: 0;
