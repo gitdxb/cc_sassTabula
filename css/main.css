@@ -19,25 +19,104 @@ body {
     margin: auto;
   }
 }
-.header {
+div.container {
+  padding: 0;
+}
+
+.header__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   width: 1260px;
   margin: auto;
+  padding: 0;
+  height: 80px;
+  background: transparent;
 }
-.header .header__content {
+.header__content .navbar {
+  height: 100%;
+}
+.header__content img {
+  width: 80px;
+  height: 80px;
+}
+.header__content .header__left {
+  padding: 0;
+}
+.header__content .header__right {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding: 0;
 }
-.header .header__right {
+.header__content .header__right-icons {
   display: flex;
+  align-items: center;
 }
-.header .header__right-icons {
+.header__content .header__right-icons .header__right-phone {
   display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 300ms ease;
+  background: #b61984;
+  border-radius: 50px;
+  border: #b61984;
+  padding: 1.1em 1.5em;
+  transition: all 300ms;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 8px;
+  line-height: 1;
 }
-.header .header__right-phone {
-  display: flex;
-}
-.header .header__right-phoneIcon .la-phone {
+.header__content .header__right-icons .header__right-phone .header__right-phoneIcon .la-phone {
   font-size: 1.25rem;
   line-height: 1;
   transform: rotateY(180deg);
+  margin-right: 3px;
+}
+.header__content .header__right-icons .header__right-phone:hover {
+  background: #fff;
+  border-color: #b61984;
+  color: #b61984;
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+.header__content .header__right-socials {
+  display: flex;
+}
+.header__content .header__right-socials a {
+  color: #191919;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+.header__content .header__right-socials a:hover {
+  color: #b61984 !important;
+}
+.header__content .nav-item {
+  padding-right: 50px;
+  height: 80px;
+}
+.header__content .nav-link {
+  color: #191919 !important;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.5s;
+  line-height: 80px;
+  padding: 0 !important;
+}
+.header__content .nav-link:hover {
+  color: #b61984 !important;
+}
+
+.headerBG {
+  background-image: url(../../img/yellow_top_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 196px;
+  width: 100%;
+  z-index: 999;
 }/*# sourceMappingURL=main.css.map */

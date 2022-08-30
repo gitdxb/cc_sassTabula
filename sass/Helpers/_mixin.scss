@@ -10,13 +10,15 @@
     background-size: cover;
     background-position: center;
 }
-@mixin button {
-    box-shadow: 0 0 0 3em #b61984 inset;
-    display: inline-block;
-    line-height: 1;
-    width: auto;
-    font-size: $fs-3;
-    &:hover {
-        color: #b61984;
-    }
+@mixin styleButton($bg, $radius, $border, $py, $px, $tra  ) {
+    background: $bg;
+    border-radius: $radius;
+    border: $border;
+    padding: $py $px;
+    transition: $tra;
+}
+@mixin styleButtonHover($bg-hover, $bd-hover, $color-hover) {
+    background: $bg-hover;
+    border-color: $bd-hover;
+    color: $color-hover;
 }
