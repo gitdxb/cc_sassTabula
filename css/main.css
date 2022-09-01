@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 html,
@@ -125,11 +126,33 @@ div.container {
 
 .footer {
   background-image: url(../../img/footer_background.jpg);
+  background-color: #aa017e;
   background-position: center;
-  background-size: 120%;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 70vh;
   width: 100%;
+  margin-top: -79px;
+  color: #fff;
+}
+.footer .footer__content {
+  height: 100%;
+  padding: 8em 0;
+}
+.footer .footer__content h4 {
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.footer .footer__content .contact__text {
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 400;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.footer .footer__content ul:nth-child(0) {
+  padding-left: 0.8rem;
 }
 
 .contactForm {

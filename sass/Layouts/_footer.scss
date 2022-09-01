@@ -1,8 +1,27 @@
 .footer {
     background-image: url(../../img/footer_background.jpg);
+    background-color: #aa017e;
     background-position: center;
-    background-size: 120%;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 70vh;
     width: 100%;
+    margin-top:-79px;
+    color: $color-primary-2;
+    .footer__content {
+        height: 100%;
+        padding: 8em 0;
+        h4 {
+            
+            @include text($color-primary-2,$fs-7, $fw-4);
+            line-height: 1.2;
+        }
+        .contact__text {
+            @include text($color-primary-2, $fs-1 - 1.5, $fw-1);
+            font-family: "Roboto",Arial,Helvetica,sans-serif;
+        }
+        ul:nth-child(0) {
+            padding-left: 0.8rem;
+        }
+    }
 }
