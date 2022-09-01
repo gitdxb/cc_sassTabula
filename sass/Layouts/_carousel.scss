@@ -1,6 +1,13 @@
 .myCarousel {
-    margin-top: -136px;
+    position: relative;
+    z-index: 1;
     padding: 0;
+
+    .myCarousel__bottom {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
     .myCarousel__left{
         span{
             @include text($color-primary-1, $fs-4 + 0.1, $fw-3);
@@ -18,13 +25,4 @@
         background-size: contain;
     }
     
-}
-.myCarousel__bottom {
-    margin-bottom: -40px;
-    margin-top: -202px;
-    height: 300px;
-    background-image: url(../../img/Violet_top_left_wave.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }

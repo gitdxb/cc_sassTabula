@@ -1,21 +1,18 @@
 .myContact {
+    position: relative;
     background-color: #dcd1f0;
     padding: 30px 0;
+    z-index: 1;
     .myContactBG {
         position: absolute;
-        top: 0;
-        background-image: url(../../img/Wave_White_bottom_right_shape_01.png);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: auto;
-        width: 100%;
-        z-index: 1;
+        bottom: 0;
+        z-index: -1;
     }
 }
 .myTeam {
-    .col {
+    .myTeam_item {
         padding: 0 1.35rem 1.35rem 1.35rem;
+        margin-top: 2.35rem;
     }
     .card {
         border: none;
@@ -65,4 +62,5 @@
             transform: scale(1.03);
         }
     }
+    
 }

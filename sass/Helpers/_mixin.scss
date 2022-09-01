@@ -4,21 +4,10 @@
     font-weight: $fw;
 }
 
-@mixin bgImage($url){
-    background-image: $url;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-@mixin styleButton($bg, $radius, $border, $py, $px, $tra  ) {
-    background: $bg;
-    border-radius: $radius;
-    border: $border;
+@mixin button($bg, $rad, $bd, $py, $px) {
+    background-color: $bg;
+    border-radius: $rad;
+    border: $bd;
     padding: $py $px;
-    transition: $tra;
 }
-@mixin styleButtonHover($bg-hover, $bd-hover, $color-hover) {
-    background: $bg-hover;
-    border-color: $bd-hover;
-    color: $color-hover;
-}
+
