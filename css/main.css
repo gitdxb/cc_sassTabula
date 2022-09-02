@@ -60,11 +60,15 @@ div.container {
   position: relative;
   z-index: 1;
   padding: 0;
+  height: 400px;
 }
 .myCarousel .myCarousel__bottom {
   position: absolute;
   bottom: 0;
   z-index: -1;
+}
+.myCarousel .myCarousel__left {
+  padding-top: 70px;
 }
 .myCarousel .myCarousel__left span {
   color: #b61984;
@@ -78,6 +82,7 @@ div.container {
   font-weight: 700;
 }
 .myCarousel .myCarousel__right {
+  margin-top: 150px;
   height: 580px;
   background-image: url(../../img/hero_team.png);
   background-position: center;
@@ -264,6 +269,11 @@ div.container {
   justify-content: center;
   align-items: center;
 }
+.contactForm .contactBG-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
 .contactForm .contactForm__content {
   width: 72vw;
   padding: 60px 0;
@@ -282,11 +292,20 @@ div.container {
   padding: 0 20px;
 }
 .contactForm .contactForm__right {
+  width: 394px !important;
+  justify-content: center;
   padding: 40px 25px;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.contactForm .contactForm__right h3 {
+  color: #191919;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .contactForm .contactForm__name {
   padding-right: 1em;
@@ -339,7 +358,7 @@ div.container {
 }
 
 .header__content {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   left: 0;
@@ -424,10 +443,8 @@ div.container {
 }
 
 .headerBG {
-  background-image: url(../../img/yellow_top_wave_01.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 196px;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
 }/*# sourceMappingURL=main.css.map */
