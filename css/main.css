@@ -592,15 +592,4 @@ div.container {
   top: 0;
   left: 0;
   z-index: -3;
-}
-
-#navbarScroll {
-  background-color: rgb(252, 250, 250);
-  box-shadow: 0 3px 6px 0 rgba(204, 204, 204, 0.5);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: top 0.3s;
-  z-index: 4;
-  height: 50px;
 }/*# sourceMappingURL=main.css.map */
