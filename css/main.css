@@ -59,6 +59,7 @@ div.container {
 .myCarousel {
   position: relative;
   z-index: 1;
+  padding-top: 140px;
   padding: 0;
   height: 400px;
   max-width: 100%;
@@ -592,4 +593,15 @@ div.container {
   top: 0;
   left: 0;
   z-index: -3;
+}
+
+#navbarScroll {
+  overflow: hidden;
+  background-color: rgb(252, 250, 250);
+  box-shadow: 0 3px 6px 0 rgba(204, 204, 204, 0.5);
+  position: fixed;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 4;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
