@@ -33,32 +33,24 @@
       <img src="./img/yellow_top_wave_01.png" alt="" class="img-fluid">
     </div>
     <!-- END OF HEADER YELLOW BG -->
-    <div class="wow animate__animated animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
-      <header class="container header__content">
+    <div id="myHeader" class="navbarScroll"  class="wow animate__animated animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+      <header class="container header__content scrollNav">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="col-md-3 header__left">
             <a href=""><img class="img-fluid" src="./img/crest.png" alt=""></a>
           </div>
-          <div class="col-md-9 header__right">
+          <div  class="col-md-9 header__right">
             <div class="header__right-items">
-                <div class="collapse navbar-collapse" id="navbarScroll">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
                       <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link active-link" href="#">About</a>
                       </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                          Courses
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -90,7 +82,8 @@
             </div>
           </div>
           
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
@@ -103,7 +96,7 @@
       <section class="container myCarousel d-flex align-items-center justify-content-between col-md-6">
         <div class="myCarousel__left wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
           <span class="d-block">ABOUT US</span>
-          <h1>The language<br> teaching experts</h1>
+          <h1>The language teaching experts</h1>
         </div>
         <div class="myCarousel__right col-md-6 wow animate__animated animate__fadeIn" data-wow-duration="0.3s" data-wow-delay="0.7s"></div>
       </section>
@@ -207,7 +200,7 @@
     </section>
     <!-- END TEAM MEMBER  -->
     <!-- CONTACT FORM -->
-    <section class="contactForm py-5">
+    <section class="contactForm">
       <div class="container contactForm__content">
         <div class="contactForm__left col-md-6 wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
           <div class="contact__image">
@@ -314,9 +307,25 @@
         </div>
         
       </div>
-      
     </footer>
-
+    <!-- <script>
+      var select = document.ge
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbarScroll").style.top = "0";
+          //document.querySelector(".myNavNav").classList.remove("myNavNav");
+          //document.querySelector(".myNavNav").style.top = "0";
+          
+        } else {
+          document.getElementById("navbarScroll").style.top = "-100px";
+          //document.querySelector("#navbarrr").classList.add("myNavNav");
+          //document.querySelector(".myNavNav").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script> -->
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

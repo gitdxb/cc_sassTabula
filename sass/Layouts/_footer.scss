@@ -2,12 +2,11 @@
     background-image: url(../../img/footer_background.jpg);
     background-color: #aa017e;
     background-position: center;
-    background-size: 120%;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
     width: 100%;
-    margin-top: -79px;
     color: $color-primary-2;
+    position: relative;
     .footer__content {
         height: 100%;
         padding: 8em 0;
@@ -70,6 +69,7 @@
     }
 
     .footer__news {
+        padding: 0 32px;
         input {
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 50px;
