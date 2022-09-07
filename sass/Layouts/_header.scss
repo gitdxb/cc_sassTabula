@@ -8,6 +8,8 @@
     padding: 0;
     height: 80px;
     background: transparent;
+    transition: 0.3s ease;
+
     @media screen and (max-width: $lg) {
         .navbar-toggler {
             position: absolute;
@@ -15,19 +17,23 @@
             left: 0;
             margin-top: 20px;
             margin-left: -46px;
+            transition: 0.3s ease;
         }
     }
     .navbar {
         height: 100%;
+        transition: 0.3s ease;
     }
     img {
         width: 80px;
         height: 80px;
+        transition: 0.3s ease;
     }
     @media screen and (max-width: $lg) {
         img {
             width: 48px;
             height: 48px;
+            transition: 0.3s ease;
         }
     }
     
@@ -38,10 +44,11 @@
         display: flex;
         justify-content: flex-end;
         padding: 0;
+        transition: 0.3s ease;
 
         .header__right-items {
             a.nav-link {
-                transition: all 0.3s ease;
+                transition: 0.3s ease;
                 position: relative;
                 &::after {
                     content: "";
@@ -56,7 +63,7 @@
                     height: 9px;
                     border-radius: 50%;
                     background-color: $color-primary-1;
-                    transition: all 0.3s ease;
+                    transition: 0.3s ease;
                     transform: scale(0);
                 }
 
@@ -83,18 +90,20 @@
     .header__right-icons {
         display: flex;
         align-items: center;
+        transition: 0.3s ease;
 
         .header__right-phone {
             display: flex;
             align-items: center;
             cursor: pointer;
-            transition: all 300ms ease;
+            transition: 0.3s ease;
             .header__right-phoneIcon {
                 .la-phone {
                     font-size: $fs-5;
                     line-height: 1;
                     transform: rotateY(180deg);
                     margin-right: 3px;
+                    transition: 0.3s ease;
                 }
             }
             @include button($color-primary-1, 50px, $color-primary-1, 1.1em, 1.5em);
@@ -129,10 +138,11 @@
     
     .header__right-socials {
         display: flex;
+
         a {
             @include text($color-primary-0, $fs-5, $fw-1);
             margin-left: 5px;
-            transition: all 0.5s;
+            transition: 0.3s ease;
             &:hover {
                 color: $color-primary-1 !important;
             }
@@ -141,10 +151,11 @@
     .nav-item {
         padding-right: 50px;
         height: 80px;
+        transition: 0.3s ease;
     }
     .nav-link {
         @include text($color-primary-0 !important, $fs-1 - 2, $fw-3);
-        transition: all 0.5s;
+        transition: 0.3s ease;
         line-height: 80px;
         padding: 0 !important;
         &:hover {
@@ -161,17 +172,49 @@
     left: 0;
     z-index: -3;
 }
-
-
-// Hide/show navbar on scroll
-#navbarScroll {
-    overflow: hidden;
-    background-color: rgb(252, 250, 250);
-    box-shadow: 0 3px 6px 0 rgb(204 204 204 / 50%);
-    position: fixed;
-    // top: 0;
-    width: 100%;
-    transition: top 0.3s;
-    z-index: 4;
-    margin-bottom: 50px;
+#header {
+    transition: 0.3s ease;
+    
 }
+.headerOnScroll {
+    position: fixed;
+    background-color: white;
+    z-index: 4;
+    width: 100%;
+    height: 48px;
+    box-shadow: 0 3px 6px 0 rgba(204, 204, 204, 0.5);
+    transition: all 0.3s ease;
+    .header__left {
+        display: none;
+    }
+
+    .header__content {
+        .navbar-expand-lg {
+            justify-content: flex-end;
+            height: 48px;
+        }
+
+        .navbar-toggler {
+            margin-top: 6px;
+            margin-left: -46px;
+        }
+    }
+    .header__right-icons .header__right-phone {
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+    }
+    
+    .navbar-nav .nav-link {
+        height: 70px;
+    }
+    @media screen and (max-width: $lg) {
+        .header__left {
+            display: block;
+        }
+        .navbar {
+            align-content: center;
+        }
+    }
+}
+
+

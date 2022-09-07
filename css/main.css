@@ -220,7 +220,7 @@ div.container {
 }
 .footer .footer__content {
   height: 100%;
-  padding: 8em 0;
+  padding: 10em 0;
 }
 .footer .footer__content h4 {
   color: #fff;
@@ -449,6 +449,7 @@ div.container {
   padding: 0;
   height: 80px;
   background: transparent;
+  transition: 0.3s ease;
 }
 @media screen and (max-width: 1200px) {
   .header__content .navbar-toggler {
@@ -457,19 +458,23 @@ div.container {
     left: 0;
     margin-top: 20px;
     margin-left: -46px;
+    transition: 0.3s ease;
   }
 }
 .header__content .navbar {
   height: 100%;
+  transition: 0.3s ease;
 }
 .header__content img {
   width: 80px;
   height: 80px;
+  transition: 0.3s ease;
 }
 @media screen and (max-width: 1200px) {
   .header__content img {
     width: 48px;
     height: 48px;
+    transition: 0.3s ease;
   }
 }
 .header__content .header__left {
@@ -479,9 +484,10 @@ div.container {
   display: flex;
   justify-content: flex-end;
   padding: 0;
+  transition: 0.3s ease;
 }
 .header__content .header__right .header__right-items a.nav-link {
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
   position: relative;
 }
 .header__content .header__right .header__right-items a.nav-link::after {
@@ -496,7 +502,7 @@ div.container {
   height: 9px;
   border-radius: 50%;
   background-color: #b61984;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
   transform: scale(0);
 }
 .header__content .header__right .header__right-items a.nav-link.active-link::after {
@@ -516,12 +522,13 @@ div.container {
 .header__content .header__right-icons {
   display: flex;
   align-items: center;
+  transition: 0.3s ease;
 }
 .header__content .header__right-icons .header__right-phone {
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: all 300ms ease;
+  transition: 0.3s ease;
   background-color: #b61984;
   border-radius: 50px;
   border: #b61984;
@@ -537,6 +544,7 @@ div.container {
   line-height: 1;
   transform: rotateY(180deg);
   margin-right: 3px;
+  transition: 0.3s ease;
 }
 .header__content .header__right-icons .header__right-phone:hover {
   color: #b61984;
@@ -567,7 +575,7 @@ div.container {
   font-size: 1.25rem;
   font-weight: 400;
   margin-left: 5px;
-  transition: all 0.5s;
+  transition: 0.3s ease;
 }
 .header__content .header__right-socials a:hover {
   color: #b61984 !important;
@@ -575,12 +583,13 @@ div.container {
 .header__content .nav-item {
   padding-right: 50px;
   height: 80px;
+  transition: 0.3s ease;
 }
 .header__content .nav-link {
   color: #191919 !important;
   font-size: 13px;
   font-weight: 600;
-  transition: all 0.5s;
+  transition: 0.3s ease;
   line-height: 80px;
   padding: 0 !important;
 }
@@ -595,13 +604,42 @@ div.container {
   z-index: -3;
 }
 
-#navbarScroll {
-  overflow: hidden;
-  background-color: rgb(252, 250, 250);
-  box-shadow: 0 3px 6px 0 rgba(204, 204, 204, 0.5);
+#header {
+  transition: 0.3s ease;
+}
+
+.headerOnScroll {
   position: fixed;
-  width: 100%;
-  transition: top 0.3s;
+  background-color: white;
   z-index: 4;
-  margin-bottom: 50px;
+  width: 100%;
+  height: 48px;
+  box-shadow: 0 3px 6px 0 rgba(204, 204, 204, 0.5);
+  transition: all 0.3s ease;
+}
+.headerOnScroll .header__left {
+  display: none;
+}
+.headerOnScroll .header__content .navbar-expand-lg {
+  justify-content: flex-end;
+  height: 48px;
+}
+.headerOnScroll .header__content .navbar-toggler {
+  margin-top: 6px;
+  margin-left: -46px;
+}
+.headerOnScroll .header__right-icons .header__right-phone {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+.headerOnScroll .navbar-nav .nav-link {
+  height: 70px;
+}
+@media screen and (max-width: 1200px) {
+  .headerOnScroll .header__left {
+    display: block;
+  }
+  .headerOnScroll .navbar {
+    align-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */
